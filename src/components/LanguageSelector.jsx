@@ -6,6 +6,7 @@ import {
   MenuItem,
   MenuList,
   Text,
+  Link
 } from "@chakra-ui/react";
 import { LANGUAGE_VERSIONS } from "../constants";
 
@@ -15,6 +16,9 @@ const ACTIVE_COLOR = "blue.400";
 const LanguageSelector = ({ language, onSelect }) => {
   return (
     <Box ml={2} mb={4}>
+        <Link  href='https://adhayanshala.netlify.app/'mb={2} fontSize="lg" fontWeight="bold" color="gray.100">
+      Back to
+      </Link>
       <Text mb={2} fontSize="lg" fontWeight="bold" color={ACTIVE_COLOR}>
         Language:
       </Text>
